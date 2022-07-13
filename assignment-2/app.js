@@ -8,7 +8,10 @@ function a(){
 
 a();
 
-// -----------------------------------
+//Output 
+// 1
+//10
+//-----------------------------------
 
 let x = 10;
 console.log(x);
@@ -19,7 +22,10 @@ function a(){
 a();
 x=1000;
 
-// -----------------------------------
+// Output
+//10
+//100
+//1000-----------------------------------
 
 const x = 100;
 console.log(x);
@@ -29,7 +35,9 @@ function a(){
 }
 a();
 
-// -----------------------------------
+// Output
+//100
+//Error-----------------------------------
 
 function a(){
     console.log(x);
@@ -37,7 +45,8 @@ function a(){
 a();
 var x=2   
 
-// -----------------------------------
+//Output 
+// undefined-----------------------------------
 
 let x;
 function b(){
@@ -45,7 +54,8 @@ function b(){
 }
 b();
 x=2;
-// -----------------------------------
+// Output
+//undefined-----------------------------------
 
 function a(){
     console.log(x);
@@ -54,7 +64,8 @@ a();
 let x=2 
 
 
-// -----------------------------------
+// Output
+//reference error-----------------------------------
 
 var a=1;
 let b=2;
@@ -69,7 +80,12 @@ let b=2;
 
 console.log(b);
 
-// ----------------------------------
+//Output
+//10
+//20
+//30
+//2
+//----------------------------------
  
 
  function x(){
@@ -83,7 +99,10 @@ console.log(b);
  console.log(z);
  z();
 
-// ----------------------------------
+// f y() { 
+//        console.log(a)
+//       }
+//7----------------------------------
 
 
 function x(){
@@ -95,7 +114,8 @@ function x(){
 }
 x();
 
-// ----------------------------------
+// Output
+//6 6 6 6 6 6----------------------------------
 
 
 function x(){
@@ -111,7 +131,9 @@ function x(){
 }
 x();
 
-// -----------------------------------
+// Output
+//interview    (6times)
+//0 1 2 3 4 5-----------------------------------
 
 const person = {
     name:"nagarro",
@@ -122,8 +144,27 @@ const person = {
 }
 
 // question1: make copy of the object and manipulate values inthe new copied object
-// question2: print all the properties using appropriate for loop 
 
+
+// question2: print all the properties using appropriate for loop 
+//
+  function copy(person) { 
+
+     let person_copy = {};
+
+     let key;
+
+     for (key in person){
+
+        person_copy[key] = person[key]
+        console.log(key);
+
+     }
+      person_copy.name ="God";
+      person_copy.age ="1000";
+
+
+     }
 
 
 
@@ -138,7 +179,7 @@ const person = {
 // 7. closure?
 // 8. event loop
 // 9. asynchronous 
-// 10. for each loop
+// 10. for eac
 
 
 
